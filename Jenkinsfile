@@ -20,7 +20,7 @@ pipeline {
             }
         }
 
-        stage('Package app') {
+        stage('Packaging app') {
             steps {
                 echo 'building static react app'
                 sh "cd build && zip -r webapp.zip ."
